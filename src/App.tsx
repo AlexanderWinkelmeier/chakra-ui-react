@@ -1,10 +1,10 @@
 import './App.css';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Stack, HStack, VStack } from '@chakra-ui/react';
 
 function App() {
   return (
     <div className="App">
-      <Flex justify="space-between" align="center">
+      <HStack spacing="24px">
         <Box bg="green" w="100px" h="200px">
           item 1
         </Box>
@@ -17,7 +17,7 @@ function App() {
         <Box bg="tomato" w="100px" h="200px">
           item 4
         </Box>
-      </Flex>
+      </HStack>
     </div>
   );
 }
